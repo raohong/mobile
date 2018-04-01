@@ -1,0 +1,48 @@
+.action-sheets-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 9999999;
+}
+
+.action-sheets-container .mask {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  transition: opacity 0.2s linear;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.action-sheets-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.2s linear;
+  right: 0;
+  padding-bottom: 40px;
+  height: 200px;
+  transform: translateY(100%);
+  background-color: #fff;
+}
+
+.action-sheets-cancel {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+}
+
+.action-sheets-content {
+  padding: 20px;
+}

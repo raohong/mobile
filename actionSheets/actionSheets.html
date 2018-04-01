@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+  </style>
+  <link rel="stylesheet" href="./actionSheets.css">
+  <script src="../../tr_component/jquery.js"></script>
+  <script src="./actionSheets.js"></script>
+</head>
+
+<body>
+  <button>dqwd</button>
+  <div data-role="action-sheets" class="action-sheets-container">
+    <div class="mask"></div>
+    <div class="action-sheets-wrapper">
+      <div class="acion-sheets-content">
+      </div>
+      <div class="action-sheets-cancel">取消</div>
+    </div>
+  </div>
+  <script>
+    var s = new ActionSheets($('[data-role="action-sheets"]'));
+    var flag = false;
+    s.show()
+    document.querySelector("button").addEventListener("click", function () {
+      s.show()
+    })
+  </script>
+</body>
+
+</html>
